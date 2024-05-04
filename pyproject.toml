@@ -1,10 +1,11 @@
 [project]
-# Support Python 3.10+.
-requires-python = ">=3.10" 
-
-[tool.ruff.lint]
-# Add the `line-too-long` rule to the enforced rule set.
-extend-select = ["E501"]
+name = "MLOps"
+version = "20240504"
+requires-python = ">=3.11"
+dependencies = [
+  "numpy>=1.26.4",
+  "pandas>=2.2.2",
+]
 
 [tool.ruff]
 # Same as Black.
