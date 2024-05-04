@@ -6,7 +6,8 @@ dependencies = [
   "numpy>=1.26.4",
   "pandas>=2.2.2",
   "ruff",
-  "pre-commit"
+  "pre-commit",
+  "sktime"
 ]
 
 [tool.ruff]
