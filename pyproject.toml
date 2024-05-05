@@ -7,8 +7,8 @@ dependencies = [
   "pandas>=2.2.2",
   "ruff",
   "pre-commit",
+  "statsmodels",
   "sktime",
-  "u8darts"
 ]
 
 [tool.ruff]
