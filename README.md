@@ -10,6 +10,10 @@ https://pypi.org/project/sktime/
 
 https://pypi.org/project/darts/
 
+## Financial Scenario Understanding - Time Series Prediction in Finance
+
+https://www.kaggle.com/datasets/marquis03/afac2023-time-series-prediction-in-finance/data
+
 ## Setting up the Development Environment
 
 To ensure a clean and isolated development environment, use a 
