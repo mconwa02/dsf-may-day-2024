@@ -7,7 +7,7 @@ dependencies = [
   "pandas>=2.2.2",
   "ruff",
   "pre-commit",
-  "sktime"
+  "statsmodels"
 ]
 
 [tool.ruff]
