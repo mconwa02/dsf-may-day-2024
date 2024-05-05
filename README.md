@@ -36,7 +36,7 @@ pip install -r pyproject.toml
 
 ### Setting up Pre-commit Hooks and Linting
 
-We use `pre-commit` to enforce code quality standards. 
+Use `pre-commit` to enforce code quality standards. 
 Additionally, use `ruff` for linting. 
 Both packages are in the `pyproject.toml` file for install.
 
