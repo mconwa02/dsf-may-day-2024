@@ -75,3 +75,12 @@ In this example:
 This example demonstrates how to use sktime to build and evaluate an ARIMA 
 model for time series forecasting. You can adjust the order of the ARIMA model
 and other parameters according to your specific dataset and requirements.
+
+### Darts (Data Analytics and Regression Testing Suite) Example
+
+Darts is a library specifically designed for time series forecasting and 
+analysis. It provides a convenient interface for building various 
+forecasting models, including ARIMA (AutoRegressive Integrated Moving Average). 
+
+You can adjust the hyperparameters of the ARIMA model and other settings 
+according to your specific dataset and requirements.
