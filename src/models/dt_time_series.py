@@ -6,11 +6,11 @@ from darts.models import ARIMA
 data = pd.read_csv(r'C:\dev\data\dsf\product_info_simple_final_train.csv')
 
 # Assuming your data has a 'date' column, set it as the index
-data['date'] = pd.to_datetime(data['transaction_date'])
-data.set_index('date', inplace=True)
+data['transaction_date'] = pd.to_datetime(data['transaction_date'])
+data.set_index('transaction_date', inplace=True)
 
 # Convert your pandas DataFrame into a Darts TimeSeries object
-series = TimeSeries.from_dataframe(data, 'date', 'value')
+series = TimeSeries.from_dataframe(data, 'transaction_date', 'total_net_value')
 
 # Split the series into training and testing sets
 train_size = int(0.8 * len(series))
@@ -27,7 +27,7 @@ forecast = model.predict(len(test))
 series.plot(label='Original Data')
 forecast.plot(label='Forecast', lw=2)
 plt.xlabel('Date')
-plt.ylabel('Value')
+plt.ylabel('Total Net Value')
 plt.title('ARIMA Forecast')
 plt.legend()
 plt.show()
