@@ -2,6 +2,8 @@
 
 MLOPS in Financial Services
 
+![speaker_flyer.jpg](docs%2Fspeaker_flyer.jpg)
+
 https://pypi.org/project/statsmodels/
 
 https://pypi.org/project/scikit-learn/
