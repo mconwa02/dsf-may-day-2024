@@ -5,9 +5,9 @@ requires-python = ">=3.11"
 dependencies = [
   "numpy>=1.26.4",
   "pandas>=2.2.2",
-  "ruff",
-  "pre-commit",
-  "statsmodels"
+  "ruff>=0.4.4",
+  "pre-commit>=3.7.1",
+  "statsmodels>=0.14.2"
 ]
 
 [tool.ruff]

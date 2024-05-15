@@ -1,26 +1,22 @@
-import pandas as pd
-import numpy as np
 import matplotlib.pyplot as plt
-from statsmodels.tsa.arima.model import ARIMA
+import pandas as pd
 from statsmodels.graphics.tsaplots import plot_acf, plot_pacf
+from statsmodels.tsa.arima.model import ARIMA
 
-# Load your time series data into a pandas DataFrame
-# For example:
-# data = pd.read_csv('your_data.csv')
+data = pd.read_csv(r"C:\dev\data\dsf\product_info_simple_final_train.csv")
 
 # Assuming your data has a 'date' column, set it as the index
-# data['date'] = pd.to_datetime(data['date'])
-# data.set_index('date', inplace=True)
+data["transaction_date"] = pd.to_datetime(data["transaction_date"])
+data = data.set_index("transaction_date")
 
 # Check if your data is stationary or not
 # If not, you may need to difference it to make it stationary
-# For example:
-# stationary_data = data.diff().dropna()
+stationary_data = data["apply_amt"].diff().dropna()
 
 # Plot the ACF and PACF to determine the order of AR and MA terms
-# plot_acf(stationary_data)
-# plot_pacf(stationary_data)
-# plt.show()
+plot_acf(stationary_data)
+plot_pacf(stationary_data)
+plt.show()
 
 # Define the order of the ARIMA model (p, d, q)
 # p: number of autoregressive terms
@@ -39,10 +35,14 @@ forecast_steps = 10  # Example value
 forecast = results.forecast(steps=forecast_steps)
 
 # Plot the original data and the forecast
-plt.plot(data.index, data.values, label='Original Data')
-plt.plot(pd.date_range(start=data.index[-1], periods=forecast_steps + 1, freq='M')[1:], forecast, label='Forecast')
-plt.xlabel('Date')
-plt.ylabel('Value')
-plt.title('ARIMA Forecast')
+plt.plot(data.index, data.values, label="Original Data")
+plt.plot(
+    pd.date_range(start=data.index[-1], periods=forecast_steps + 1, freq="M")[1:],
+    forecast,
+    label="Forecast",
+)
+plt.xlabel("Date")
+plt.ylabel("Value")
+plt.title("ARIMA Forecast")
 plt.legend()
 plt.show()
