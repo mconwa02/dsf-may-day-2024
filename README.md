@@ -31,14 +31,19 @@ venv\Scripts\activate
 
 Once inside the virtual environment, install project dependencies from the `pyproject.toml` file:
 ```bash
-pip install -r pyproject.toml
+pip install -e .
 ```
+
+Poetry and pip-tools are excellent package managers. As pip won't necessarily
+handle all dependencies and constraints as effectively as package managers
 
 ### Setting up Pre-commit Hooks and Linting
 
 Use `pre-commit` to enforce code quality standards. 
 Additionally, use `ruff` for linting. 
 Both packages are in the `pyproject.toml` file for install.
+
+https://pre-commit.com
 
 Navigate to your project directory and set up pre-commit hooks:
 ```bash
@@ -48,4 +53,6 @@ pre-commit install
 A `.pre-commit-config.yaml` file is in project directory with config for 
 ruff linting. Whenever you make a commit, `pre-commit` will run linting 
 with Ruff and enforce code quality standards automatically.
+
+https://github.com/astral-sh/ruff-pre-commit
 
