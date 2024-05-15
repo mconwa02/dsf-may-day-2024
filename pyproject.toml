@@ -12,7 +12,6 @@ dependencies = [
 
 [tool.ruff]
 # Same as Black.
-# Set the maximum line length to 88.
 line-length = 88
 indent-width = 4
 
