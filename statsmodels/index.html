@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Setup - Data Science Festival - MLOps</title>
+    <title>Statsmodels - Data Science Festival - MLOps</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Setup";
-        var mkdocs_page_input_path = "project_setup.md";
+        var mkdocs_page_name = "Statsmodels";
+        var mkdocs_page_input_path = "statsmodels.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -44,20 +44,12 @@
                 <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
                 </li>
               </ul>
-              <ul class="current">
-                <li class="toctree-l1 current"><a class="reference internal current" href="./">Setup</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#creating-a-virtual-environment">Creating a Virtual Environment</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#installing-dependencies">Installing Dependencies</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#setting-up-pre-commit-hooks-and-linting">Setting up Pre-commit Hooks and Linting</a>
-    </li>
-    </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../project_setup/">Setup</a>
                 </li>
               </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../statsmodels/">Statsmodels</a>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Statsmodels</a>
                 </li>
               </ul>
       </div>
@@ -74,7 +66,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li>
-      <li>Setup</li>
+      <li>Statsmodels</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -83,41 +75,13 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h2 id="setting-up-the-development-environment">Setting up the Development Environment</h2>
-<p>To ensure a clean and isolated development environment, use a 
-virtual environment created with <code>venv</code> and manage dependencies using 
-<code>pyproject.toml</code>. </p>
-<p>Additionally, set up pre-commit hooks for code quality checks, 
-including linting with Ruff.</p>
-<h3 id="creating-a-virtual-environment">Creating a Virtual Environment</h3>
-<p>Create and activate a virtual environment:</p>
-<pre><code class="language-bash">python -m venv venv
-venv\Scripts\activate
-</code></pre>
-<h3 id="installing-dependencies">Installing Dependencies</h3>
-<p>Once inside the virtual environment, install project dependencies from the <code>pyproject.toml</code> file:</p>
-<pre><code class="language-bash">pip install -e .
-</code></pre>
-<p>Poetry and pip-tools are excellent package managers. As pip won't necessarily
-handle all dependencies and constraints as effectively as package managers</p>
-<h3 id="setting-up-pre-commit-hooks-and-linting">Setting up Pre-commit Hooks and Linting</h3>
-<p>Use <code>pre-commit</code> to enforce code quality standards. 
-Additionally, use <code>ruff</code> for linting. 
-Both packages are in the <code>pyproject.toml</code> file for install.</p>
-<p>https://pre-commit.com</p>
-<p>Navigate to your project directory and set up pre-commit hooks:</p>
-<pre><code class="language-bash">pre-commit install
-</code></pre>
-<p>A <code>.pre-commit-config.yaml</code> file is in project directory with config for 
-ruff linting. Whenever you make a commit, <code>pre-commit</code> will run linting 
-with Ruff and enforce code quality standards automatically.</p>
-<p>https://github.com/astral-sh/ruff-pre-commit</p>
+                <p><img alt="img.png" src="../img.png" /></p>
+<p><img alt="img_1.png" src="../img_1.png" /></p>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href=".." class="btn btn-neutral float-left" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../statsmodels/" class="btn btn-neutral float-right" title="Statsmodels">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../project_setup/" class="btn btn-neutral float-left" title="Setup"><span class="icon icon-circle-arrow-left"></span> Previous</a>
     </div>
 
   <hr/>
@@ -140,10 +104,8 @@ with Ruff and enforce code quality standards automatically.</p>
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../project_setup/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
-    
-      <span><a href="../statsmodels/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
