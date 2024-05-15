@@ -1,1 +1,5 @@
-site_name: My Docs
+site_name: Data Science Festival - MLOps
+nav:
+  - Home: index.md
+  - Setup: project_setup.md
+theme: readthedocs
