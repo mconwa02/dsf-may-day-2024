@@ -3,17 +3,17 @@ import pandas as pd
 from darts import TimeSeries
 from darts.models import ARIMA
 
-data = pd.read_csv(r"C:\dev\data\dsf\product_info_simple_final_train.csv")
+df = pd.read_csv(r"C:\dev\data\dsf\product_info_simple_final_train.csv")
 
 # Assuming your data has a 'date' column, set it as the index
-data["date"] = pd.to_datetime(data["transaction_date"])
+df["date"] = pd.to_datetime(df["transaction_date"])
 
 # pick one product with a least 30 values
-data = data[data["product_pid"] == "product100"]
+df = df[df["product_pid"] == "product100"]
 
 # Convert your pandas DataFrame into a Darts TimeSeries object
 series = TimeSeries.from_dataframe(
-    data,
+    df,
     time_col="transaction_date",
     value_cols="apply_amt",
     fill_missing_dates=True,
