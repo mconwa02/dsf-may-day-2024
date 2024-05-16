@@ -16,7 +16,6 @@ df = df[df["product_pid"] == "product100"]
 # Check if your data is stationary or not
 # If not, you may need to difference it to make it stationary
 stationary_data = df["apply_amt"].diff().dropna()
-# df = df.interpolate(method='linear')
 
 # Plot the ACF and PACF to determine the order of AR and MA terms
 plot_acf(stationary_data)
