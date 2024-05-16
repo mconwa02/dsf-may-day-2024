@@ -9,6 +9,6 @@ The output includes:
   forecast, visually representing the model's prediction of future values.
 
 
-![PACF](img.png)
+![PACF](images/statsmodels_pacf.png)
 
-![ACF](img_1.png)
+![ACF](images/statsmodels_acf.png)
