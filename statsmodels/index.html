@@ -50,6 +50,12 @@
               </ul>
               <ul class="current">
                 <li class="toctree-l1 current"><a class="reference internal current" href="./">Statsmodels</a>
+    <ul class="current">
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../darts/">Darts</a>
                 </li>
               </ul>
       </div>
@@ -75,13 +81,21 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <p><img alt="img.png" src="../img.png" /></p>
-<p><img alt="img_1.png" src="../img_1.png" /></p>
+                <h1 id="time-series-analysis-and-forecasting-using-the-arima-model-with-statsmodels">Time series analysis and forecasting using the ARIMA model with Statsmodels</h1>
+<h1 id="acf-and-pacf-plots">ACF and PACF Plots</h1>
+<p>The Auto-Correlation Function (ACF) and Partial Auto-Correlation Function (PACF) of the differenced data to help determine the appropriate order of the ARIMA model's parameters (p, d, q).</p>
+<p>The output includes:
+- ACF and PACF plots that help identify the AR and MA terms.
+- The plots show the original transaction data along with the ARIMA model's 
+  forecast, visually representing the model's prediction of future values.</p>
+<p><img alt="PACF" src="../images/statsmodels_pacf.png" /></p>
+<p><img alt="ACF" src="../images/statsmodels_acf.png" /></p>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
         <a href="../project_setup/" class="btn btn-neutral float-left" title="Setup"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../darts/" class="btn btn-neutral float-right" title="Darts">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -106,6 +120,8 @@
     
       <span><a href="../project_setup/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
+    
+      <span><a href="../darts/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
