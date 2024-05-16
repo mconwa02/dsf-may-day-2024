@@ -5,16 +5,15 @@ requires-python = ">=3.11"
 dependencies = [
   "numpy>=1.26.4",
   "pandas>=2.2.2",
-  "ruff>=0.4.3",
-  "pre-commit>=3.7.0",
+  "ruff>=0.4.4",
+  "pre-commit>=3.7.1",
   "statsmodels>=0.14.2",
-  "sktime>=0.29.0",
+    "sktime>=0.29.0",
   "darts>=0.29.0"
 ]
 
 [tool.ruff]
 # Same as Black.
-# Set the maximum line length to 88.
 line-length = 88
 indent-width = 4
 
