@@ -3,11 +3,12 @@ import pandas as pd
 from sktime.forecasting.arima import ARIMA
 from sktime.utils.plotting import plot_series
 
-data = pd.read_csv(r"C:\dev\data\dsf\product_info_simple_final_train.csv")
-data["transaction_date"] = pd.to_datetime(data["transaction_date"], format="%Y%m%d")
-data = data.set_index("transaction_date")
+df = pd.read_csv(r"C:\dev\data\dsf\product_info_simple_final_train.csv")
+df["transaction_date"] = pd.to_datetime(df["transaction_date"], format="%Y%m%d")
+df = df.set_index("transaction_date")
+df.index.freq = "D"
 
-y = data["apply_amt"].array()
+y = df["apply_amt"]
 
 # Split the data into training and testing sets
 train_size = int(0.8 * len(y))
