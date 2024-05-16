@@ -31,7 +31,7 @@ forecasting models, including ARIMA (AutoRegressive Integrated Moving Average).
 
 https://pypi.org/project/darts/
 
-### Darts (Scikit time series) Example
+### Sktime (Scikit time series) Example
 
 This example demonstrates how to use sktime to build and evaluate an ARIMA model for time series forecasting. You can adjust the order of the ARIMA model and other parameters according to your specific dataset and requirements
 
