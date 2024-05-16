@@ -1,12 +1,10 @@
 import matplotlib.pyplot as plt
-import pandas as pd
 from sktime.forecasting.arima import ARIMA
 from sktime.utils.plotting import plot_series
 
-df = pd.read_csv(r"C:\dev\data\dsf\product_info_simple_final_train.csv")
-df["transaction_date"] = pd.to_datetime(df["transaction_date"], format="%Y%m%d")
-df = df.set_index("transaction_date")
-df.index.freq = "D"
+from data.preprocess import process_data
+
+df = process_data()
 
 y = df["apply_amt"]
 

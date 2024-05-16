@@ -3,7 +3,9 @@ import pandas as pd
 from statsmodels.graphics.tsaplots import plot_acf, plot_pacf
 from statsmodels.tsa.arima.model import ARIMA
 
-df = pd.read_csv(r"C:\dev\data\dsf\product_info_simple_final_train.csv")
+from data.preprocess import process_data
+
+df = process_data()
 
 # Assuming your df has a 'date' column, set it as the index
 df["transaction_date"] = pd.to_datetime(df["transaction_date"], format="%Y%m%d")
