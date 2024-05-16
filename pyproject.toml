@@ -7,7 +7,10 @@ dependencies = [
   "pandas>=2.2.2",
   "ruff>=0.4.4",
   "pre-commit>=3.7.1",
-  "statsmodels>=0.14.2"
+  "statsmodels>=0.14.2",
+  "sktime>=0.29.0",
+  "darts>=0.29.0",
+  "seaborn"
 ]
 
 [tool.ruff]
