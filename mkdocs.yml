@@ -1,0 +1,7 @@
+site_name: Data Science Festival - MLOps
+nav:
+  - Home: index.md
+  - Setup: project_setup.md
+  - Statsmodels: statsmodels.md
+  - Darts: darts.md
+theme: readthedocs
